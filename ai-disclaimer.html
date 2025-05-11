@@ -1,35 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>基准领航 AI 使用说明</title>
+    <title>基准领航AI功能使用声明与免责</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f8f9fa; color: #343a40; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        h1, h2 { color: #007bff; text-align: center; }
+        h1 { font-size: 1.8em; margin-bottom: 20px; }
+        h2 { font-size: 1.4em; margin-top: 30px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        p, li { font-size: 1em; color: #495057; margin-bottom: 10px; }
+        ul { padding-left: 20px; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #dee2e6; font-size: 0.9em; color: #6c757d; }
+        strong { color: #dc3545; } /* Emphasize warnings in red */
+        .highlight { color: #28a745; font-weight: bold; }
+    </style>
 </head>
-<body style="font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px;">
-    <h1>基准领航 AI 使用说明与免责声明</h1>
-    <p>基准领航 应用中集成了由 DeepSeek R1 提供的大语言模型（LLM）技术，用于为用户提供自然语言交互体验。</p>
+<body>
+    <div class="container">
+        <h1>基准领航AI功能使用声明与免责</h1>
+        <p>生效日期：2025年05月15日</p>
 
-    <h2>一、使用范围说明</h2>
-    <ul>
-        <li>AI 对话功能用于查询基金/ETF 相关知识、解释投资概念、辅助导航与使用。</li>
-        <li>AI 回答基于模型生成，无法保证绝对准确性。</li>
-    </ul>
+        <h2>一、AI功能说明</h2>
+        <p>“基准领航”应用程序（以下简称“本应用”）集成了AI智能助手功能（以下简称“AI服务”）。该AI服务旨在通过自然语言处理技术，为用户提供基金、ETF相关信息的查询与解答，并能根据用户提供的投资偏好生成投资组合建议。</p>
+        <p>AI服务通过调用第三方大语言模型（LLM）实现，具体调用路径为应用内的云函数 `/getAIResponseIOS`。</p>
 
-    <h2>二、免责声明</h2>
-    <p>AI 生成内容仅供参考，不构成任何形式的建议（包括但不限于投资、法律、医疗建议）。</p>
-    <p>如您据此做出投资决策，应自行承担风险。</p>
+        <h2>二、信息参考性质</h2>
+        <p><strong>AI服务提供的所有信息，包括但不限于市场分析、基金解读、投资组合建议、风险提示等，均是基于现有数据和模型算法自动生成的，其性质仅为信息参考，不应被视为任何形式的投资建议、财务建议、法律建议或其他专业意见。</strong></p>
+        <p>用户不应将AI服务的输出作为做出任何投资决策或采取任何行动的唯一依据。投资涉及风险，过去的业绩并不代表未来的表现。用户在做出任何投资决策前，应进行独立的调查研究，审慎评估，并在必要时咨询专业的投资顾问。</p>
 
-    <h2>三、内容管理机制</h2>
-    <ul>
-        <li>我们已启用敏感词过滤系统以屏蔽违法、不当内容。</li>
-        <li>如您发现不当内容，可通过邮箱 <a href="mailto:jzlh.application@gmail.com">jzlh.application@gmail.com</a> 举报。</li>
-    </ul>
+        <h2>三、内容准确性与完整性</h2>
+        <p>我们努力确保AI服务所依赖的数据来源的可靠性，并持续优化模型以提高输出内容的质量。然而，由于金融市场的复杂性和瞬息万变，以及大语言模型本身的技术限制，我们<strong>不能保证AI服务生成的所有信息都是完全准确、最新或无遗漏的</strong>。</p>
+        <p>AI模型可能会产生非预期的、不准确的甚至是误导性的信息。用户应对AI服务提供的内容自行加以判断和核实。</p>
 
-    <h2>四、用户输入与隐私</h2>
-    <p>为优化模型表现，我们会匿名记录部分对话内容，数据仅用于内部模型微调训练，并受隐私政策保护。</p>
+        <h2>四、AI投资组合建议的局限性</h2>
+        <p>本应用提供的AI投资组合建议是基于用户主动提供的“投资偏好”数据以及预设的模型算法生成的。这些建议具有以下局限性：</p>
+        <ul>
+            <li>建议是个性化的，但其生成过程依赖于用户提供信息的准确性和完整性。</li>
+            <li>模型可能无法完全捕捉到所有影响投资决策的个人因素和市场变量。</li>
+            <li>建议具有时效性，市场情况变化可能导致建议不再适用。</li>
+            <li><strong>AI生成的投资组合配置仅为一种可能的参考方案，用户采纳与否以及由此产生的一切后果，均由用户自行承担。</strong></li>
+        </ul>
 
-    <hr>
-    <p style="text-align: center;">© 深圳市基准领航科技有限公司</p>
+        <h2>五、聊天数据的使用</h2>
+        <p>为了改进AI服务的质量和用户体验，您与AI助手的聊天记录（包括您的提问和AI的回复）可能会被收集。这些数据在用于模型训练或分析前，将进行<span class="highlight">匿名化处理</span>，以保护您的个人隐私。具体的数据使用方式请参考<a href="privacy.html">《基准领航隐私政策》</a>中关于AI聊天的相关说明。</p>
+        
+        <h2>六、用户责任与反馈</h2>
+        <p>用户应对其如何使用AI服务及其输出内容承担全部责任。</p>
+        <p>我们鼓励用户对AI服务提供反馈。如果您发现AI生成的内容存在明显错误、不当之处或有任何改进建议，您可以通过应用内的反馈机制（如点赞/点踩功能、反馈表单）或通过<a href="mailto:jzlh.application@gmail.com">jzlh.application@gmail.com</a>与我们联系。您的反馈对我们改进服务至关重要。</p>
+
+        <h2>七、免责总述</h2>
+        <p>在任何情况下，对于因使用或无法使用本应用AI服务（包括依赖AI服务提供的信息）而导致的任何直接、间接、附带、特殊、后果性或惩罚性的损害（包括但不限于利润损失、数据丢失或业务中断），即使深圳市基准领航科技有限公司已被告知可能发生此类损害，我们在法律允许的最大范围内不承担任何责任。</p>
+
+        <div class="footer">
+            <p>&copy; 2025 深圳市基准领航科技有限公司. 保留所有权利.</p>
+        </div>
+    </div>
 </body>
 </html>
